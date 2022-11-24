@@ -18,7 +18,7 @@
         },
         {
           "amount": 250,
-          "fluid": "minecraft:lava",
+          "fluid": "createkaboom:alcohol",
           "nbt": {}
         }
       ],
