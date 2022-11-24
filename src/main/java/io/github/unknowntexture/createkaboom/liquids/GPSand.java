@@ -1,5 +1,5 @@
 
-    public static final RegistryObject<ForgeFlowingFluid> GUNPOWDER_SAND
+    public static final RegistryObject<ForgeFlowingFluid> GUNPOWDER_SAND_FLUID
             = FLUIDS.register("GUNPOWDER_SAND_FLUID", () -> new ForgeFlowingFluid.Source(FluidRegistry.GUNPOWDER_SAND_PROPERTIES));
 
     public static final RegistryObject<ForgeFlowingFluid> GUNPOWDER_SAND_FLOWING
