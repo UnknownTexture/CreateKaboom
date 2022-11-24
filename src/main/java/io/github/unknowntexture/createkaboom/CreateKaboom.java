@@ -1,6 +1,7 @@
 package io.github.unknowntexture.createkaboom;
 
 import com.mojang.logging.LogUtils;
+import io.github.unknowntexture.createkaboom.block.Modblocks;
 import io.github.unknowntexture.createkaboom.item.Moditems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -33,6 +34,7 @@ public class CreateKaboom
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         Moditems.register(eventBus);
+        Modblocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 

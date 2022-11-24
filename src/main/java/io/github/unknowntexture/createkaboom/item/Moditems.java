@@ -1,7 +1,6 @@
 package io.github.unknowntexture.createkaboom.item;
 
 import io.github.unknowntexture.createkaboom.CreateKaboom;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -13,10 +12,10 @@ public class Moditems {
             DeferredRegister.create(ForgeRegistries.ITEMS, CreateKaboom.MOD_ID);
 
     public static final RegistryObject<Item> IRON_BOMB = ITEMS.register("iron_bomb",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_KABOOM_TAB)));
 
     public static final RegistryObject<Item> GLASS_BOMB = ITEMS.register("glass_bomb",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_KABOOM_TAB)));
 
 
     public static void register(IEventBus eventBus) {
