@@ -7,7 +7,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab CREATE_KABOOM_TAB = new CreativeModeTab("createkaboomtab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(Moditems.IRON_BOMB.get());
+            return new ItemStack(ModItems.IRON_BOMB.get());
         }
     };
 }

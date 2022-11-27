@@ -1,8 +1,8 @@
 package io.github.unknowntexture.createkaboom;
 
 import com.mojang.logging.LogUtils;
-import io.github.unknowntexture.createkaboom.block.Modblocks;
-import io.github.unknowntexture.createkaboom.item.Moditems;
+import io.github.unknowntexture.createkaboom.block.ModBlocks;
+import io.github.unknowntexture.createkaboom.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -21,7 +21,6 @@ import org.slf4j.Logger;
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
-// Checking gh push
 @Mod(CreateKaboom.MOD_ID)
 public class CreateKaboom
 {
@@ -34,8 +33,8 @@ public class CreateKaboom
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        Moditems.register(eventBus);
-        Modblocks.register(eventBus);
+        ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 

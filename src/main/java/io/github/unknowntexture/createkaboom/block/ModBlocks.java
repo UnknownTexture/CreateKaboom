@@ -1,7 +1,7 @@
 package io.github.unknowntexture.createkaboom.block;
 
 import io.github.unknowntexture.createkaboom.CreateKaboom;
-import io.github.unknowntexture.createkaboom.item.Moditems;
+import io.github.unknowntexture.createkaboom.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -13,7 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-public class Modblocks {
+public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, CreateKaboom.MOD_ID);
 
@@ -24,7 +24,7 @@ public class Modblocks {
     }
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,
                                                                            CreativeModeTab tab) {
-        return Moditems.ITEMS.register(name, () -> new BlockItem(block.get(),
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties().tab(tab)));
     }
 
