@@ -1,4 +1,4 @@
-package io.github.unknowntexture.createkaboom.item;
+package io.unknowntexture.createkaboom.item;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;

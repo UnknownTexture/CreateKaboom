@@ -1,6 +1,10 @@
 {
-  "item.createkaboom.iron_bomb": "Iron Bomb",
-  "item.createkaboom.glass_bomb": "Glass Bomb",
+  "itemGroup.createkaboomtab": "Create: Kaboom",
 
-  "itemGroup.createkaboomtab": "Create: Kaboom"
+  "item.createkaboom.iron_bomb": "Iron Bomb",
+  "item.createkaboom.glass_shell": "Glass Shell",
+  "item.createkaboom.incomplete_glass_bomb": "Incomplete Glass Bomb",
+  "item.createkaboom.glass_bomb": "Glass Bomb"
+
+
 }

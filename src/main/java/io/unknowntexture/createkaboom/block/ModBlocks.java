@@ -1,7 +1,7 @@
-package io.github.unknowntexture.createkaboom.block;
+package io.unknowntexture.createkaboom.block;
 
-import io.github.unknowntexture.createkaboom.CreateKaboom;
-import io.github.unknowntexture.createkaboom.item.ModItems;
+import io.unknowntexture.createkaboom.CreateKaboom;
+import io.unknowntexture.createkaboom.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
