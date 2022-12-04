@@ -22,7 +22,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_KABOOM_TAB)));
 
     public static final RegistryObject<Item> GLASS_BOMB = ITEMS.register("glass_bomb",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_KABOOM_TAB)));
+            () -> new ThrowableBombItem(new Item.Properties().tab(ModCreativeModeTab.CREATE_KABOOM_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
