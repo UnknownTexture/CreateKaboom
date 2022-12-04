@@ -30,17 +30,15 @@ displayName="Create: Kaboom" #mandatory
 #logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
 credits='''
-Create: Kaboom was made possible by...
-Unknown_Texture: Project organizer
-DatCoder: Main developer and coder
-CeoOfGoogle: Main developer and modeler
-Truffle: Main developer and texture creator
+Project organizer: Unknown_Texture
+Coding department: DatCoder, amik
+Art Team: CeoOfGoogle, Truffle
 '''
 # A text field displayed in the mod UI
-authors="Unknown_Texture, DatCoder, CeoOfGoogle, Truffle" #optional
+authors="Unknown_Texture, DatCoder, CeoOfGoogle, Truffle, amik" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Create: Kaboom is an addon to the Create mod that adds weapons
+Create: Kaboom is an addon to the Create mod that adds block weapons
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.createkaboom]] #optional
