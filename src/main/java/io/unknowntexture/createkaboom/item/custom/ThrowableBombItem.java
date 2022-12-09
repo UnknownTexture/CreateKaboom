@@ -25,7 +25,7 @@ public class ThrowableBombItem extends Item {
         if (!p_43142_.isClientSide) {
             ThrowableBombProjectile bomb = new ThrowableBombProjectile(p_43142_, p_43143_);
             bomb.setItem(itemstack);
-            bomb.shootFromRotation(p_43143_, p_43143_.getXRot(), p_43143_.getYRot(), 0.0F, 1.5F, 1.0F);
+            bomb.shootFromRotation(p_43143_, p_43143_.getXRot(), p_43143_.getYRot(), 0.0F, 0.9F, 1.0F);
             p_43142_.addFreshEntity(bomb);
         }
 
@@ -33,6 +33,7 @@ public class ThrowableBombItem extends Item {
         if (!p_43143_.getAbilities().instabuild) {
             itemstack.shrink(1);
         }
+
 
         return InteractionResultHolder.sidedSuccess(itemstack, p_43142_.isClientSide());
     }
