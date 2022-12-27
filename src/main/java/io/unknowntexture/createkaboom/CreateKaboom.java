@@ -27,7 +27,7 @@ public class CreateKaboom
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
-        // ModFluids.register(eventBus); FAILED
+        ModFluids.register(eventBus);
 
         eventBus.addListener(this::setup);
 

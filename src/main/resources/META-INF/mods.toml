@@ -38,7 +38,7 @@ Art Team: CeoOfGoogle, Truffle
 authors="Unknown_Texture, DatCoder, CeoOfGoogle, Truffle, amik" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Create: Kaboom is an addon to the Create mod that adds block weapons
+Create: Kaboom is an addon to the Create mod that adds block weapons that are created by putting different components together
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.createkaboom]] #optional
