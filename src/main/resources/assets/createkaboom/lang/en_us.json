@@ -4,7 +4,10 @@
   "item.createkaboom.iron_bomb": "Iron Bomb",
   "item.createkaboom.glass_shell": "Glass Shell",
   "item.createkaboom.incomplete_glass_bomb": "Incomplete Glass Bomb",
-  "item.createkaboom.glass_bomb": "Glass Bomb"
+  "item.createkaboom.glass_bomb": "Glass Bomb",
 
-
+  "item.createkaboom.alcohol_bucket": "Bucket of Alcohol",
+  "item.createkaboom.gunpowder_bucket": "Bucket of Gunpowder",
+  "item.createkaboom.molten_glass_bucket": "Bucket of Molten Glass",
+  "item.createkaboom.molten_iron_bucket": "Bucket of Molten Iron"
 }
