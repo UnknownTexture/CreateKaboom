@@ -30,6 +30,12 @@ public class ModItems {
     public static final RegistryObject<Item> INCOMPLETE_GLASS_BOMB = ITEMS.register("incomplete_glass_bomb",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_KABOOM_TAB)));
 
+    public static final RegistryObject<Item> IRON_SHELL = ITEMS.register("iron_shell",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_KABOOM_TAB)));
+
+    public static final RegistryObject<Item> INCOMPLETE_IRON_BOMB = ITEMS.register("incomplete_iron_bomb",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_KABOOM_TAB)));
+
 
     // Buckets
 

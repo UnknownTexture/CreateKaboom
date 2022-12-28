@@ -10,21 +10,23 @@
     }
   ],
   "sequence": [
-    {
-      "type": "create:filling",
-      "ingredients": [
         {
-          "item": "createkaboom:incomplete_glass_bomb"
+        "type":"create:filling",
+        "ingredients":[
+        {
+        "item":"createkaboom:incomplete_glass_bomb"
         },
         {
-          "amount": 250,
-          "fluid": "createkaboom:alcohol",
-          "nbt": {}
+        "amount":250,
+        "fluid":"createkaboom:alcohol",
+        "nbt":{}
         }
-      ],
-      "results": [
+        ],
+        "results":[
         {
-          "item": "create:incomplete_glass_bomb"
+        "item":"create:incomplete_glass_bomb"
         }
-      ]
+        ]
+        ]
     }
+        }
