@@ -6,6 +6,7 @@
 # The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
 modLoader="javafml" #mandatory
 # A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+state="First beta release"
 loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 # The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
 # Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
@@ -19,7 +20,7 @@ modId="createkaboom" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 # ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
 # see the associated build.gradle script for how to populate this completely automatically during a build
-version="${file.jarVersion}" #mandatory
+version="0.0.1" #mandatory
  # A display name for the mod
 displayName="Create: Kaboom" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
@@ -30,9 +31,7 @@ displayName="Create: Kaboom" #mandatory
 #logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
 credits='''
-Project organizer: Unknown_Texture
-Coding department: DatCoder, amik
-Art Team: CeoOfGoogle, Truffle
+Project organizer: Unknown_Texture \ Coding department: DatCoder, amik \ Art Team: CeoOfGoogle, Truffle
 '''
 # A text field displayed in the mod UI
 authors="Unknown_Texture, DatCoder, CeoOfGoogle, Truffle, amik" #optional

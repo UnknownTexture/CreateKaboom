@@ -41,10 +41,11 @@ public class ModFluids {
 
     public static final RegistryObject<LiquidBlock> ALCOHOL_BLOCK = ModBlocks.BLOCKS.register("alcohol",
             () -> new LiquidBlock(() -> ModFluids.ALCOHOL_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
-                    .noCollission().strength(100f).noDrops()));
+                    .strength(100f).noDrops()));
 
     // Gunpowder Sand
     public static final ResourceLocation GUNPOWDER_SAND_FLUID_STILL = new ResourceLocation("createkaboom:fluid/gunpowder_sand_fluid");
+    public static final ResourceLocation GUNPOWDER_SAND_FLUID_FLOWING = new ResourceLocation("createkaboom:fluid/gunpowder_sand_flowing");
 
     public static final RegistryObject<ForgeFlowingFluid> GUNPOWDER_SAND_FLUID
             = FLUIDS.register("gunpowder_sand_fluid", () -> new ForgeFlowingFluid.Source(ModFluids.GUNPOWDER_SAND_PROPERTIES));
@@ -53,11 +54,11 @@ public class ModFluids {
             = FLUIDS.register("gunpowder_sand_flowing", () -> new ForgeFlowingFluid.Flowing(ModFluids.GUNPOWDER_SAND_PROPERTIES));
 
     public static final ForgeFlowingFluid.Properties GUNPOWDER_SAND_PROPERTIES = new ForgeFlowingFluid.Properties(
-            () -> GUNPOWDER_SAND_FLUID.get(), () -> GUNPOWDER_SAND_FLOWING.get(), FluidAttributes.builder(GUNPOWDER_SAND_FLUID_STILL, null)
-            .density(15).luminosity(2).viscosity(7).sound(SoundEvents.SAND_HIT)).slopeFindDistance(2).levelDecreasePerBlock(10) .block(() -> ModFluids.GUNPOWDER_SAND_BLOCK.get()).bucket(() -> ModItems.GUNPOWDER_BUCKET.get());;
+            () -> GUNPOWDER_SAND_FLUID.get(), () -> GUNPOWDER_SAND_FLOWING.get(), FluidAttributes.builder(GUNPOWDER_SAND_FLUID_STILL, GUNPOWDER_SAND_FLUID_FLOWING)
+            .density(10).luminosity(2).viscosity(4).sound(SoundEvents.SAND_HIT)).slopeFindDistance(2).levelDecreasePerBlock(3) .block(() -> ModFluids.GUNPOWDER_SAND_BLOCK.get()).bucket(() -> ModItems.GUNPOWDER_BUCKET.get());;
     public static final RegistryObject<LiquidBlock> GUNPOWDER_SAND_BLOCK = ModBlocks.BLOCKS.register("gunpowder_sand",
             () -> new LiquidBlock(() -> ModFluids.GUNPOWDER_SAND_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
-                    .noCollission().strength(100f).noDrops()));
+                    .strength(100f).noDrops()));
 
     // Molten Glass
     public static final ResourceLocation MOLTEN_GLASS_FLUID_STILL = new ResourceLocation("createkaboom:fluid/molten_glass_fluid");
@@ -71,10 +72,10 @@ public class ModFluids {
 
     public static final ForgeFlowingFluid.Properties MOLTEN_GLASS_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> MOLTEN_GLASS_FLUID.get(), () -> MOLTEN_GLASS_FLOWING.get(), FluidAttributes.builder(MOLTEN_GLASS_FLUID_STILL, MOLTEN_GLASS_FLUID_FLOWING)
-            .density(20).luminosity(2).viscosity(9).sound(SoundEvents.HONEY_DRINK)).slopeFindDistance(2).levelDecreasePerBlock(10) .block(() -> ModFluids.MOLTEN_GLASS_BLOCK.get()).bucket(() -> ModItems.MOLTEN_GLASS_BUCKET.get());
+            .density(20).luminosity(3).viscosity(6).sound(SoundEvents.HONEY_DRINK)).slopeFindDistance(4).levelDecreasePerBlock(6) .block(() -> ModFluids.MOLTEN_GLASS_BLOCK.get()).bucket(() -> ModItems.MOLTEN_GLASS_BUCKET.get());
     public static final RegistryObject<LiquidBlock> MOLTEN_GLASS_BLOCK = ModBlocks.BLOCKS.register("molten_glass",
-            () -> new LiquidBlock(() -> ModFluids.MOLTEN_GLASS_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
-                    .noCollission().strength(100f).noDrops()));
+            () -> new LiquidBlock(() -> ModFluids.MOLTEN_GLASS_FLUID.get(), BlockBehaviour.Properties.of(Material.LAVA)
+                    .strength(100f).noDrops()));
 
     // Molten Iron
     public static final ResourceLocation MOLTEN_IRON_FLUID_STILL = new ResourceLocation("createkaboom:fluid/molten_iron_fluid");
@@ -88,10 +89,10 @@ public class ModFluids {
 
     public static final ForgeFlowingFluid.Properties MOLTEN_IRON_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> MOLTEN_IRON_FLUID.get(), () -> MOLTEN_IRON_FLOWING.get(), FluidAttributes.builder(MOLTEN_IRON_FLUID_STILL, MOLTEN_IRON_FLUID_FLOWING)
-            .density(20).luminosity(2).viscosity(9).sound(SoundEvents.HONEY_DRINK)).slopeFindDistance(2).levelDecreasePerBlock(10) .block(() -> ModFluids.MOLTEN_IRON_BLOCK.get()).bucket(() -> ModItems.MOLTEN_IRON_BUCKET.get());
+            .density(20).luminosity(3).viscosity(7).sound(SoundEvents.HONEY_DRINK)).slopeFindDistance(4).levelDecreasePerBlock(6) .block(() -> ModFluids.MOLTEN_IRON_BLOCK.get()).bucket(() -> ModItems.MOLTEN_IRON_BUCKET.get());
     public static final RegistryObject<LiquidBlock> MOLTEN_IRON_BLOCK = ModBlocks.BLOCKS.register("molten_iron",
-            () -> new LiquidBlock(() -> ModFluids.MOLTEN_IRON_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
-                    .noCollission().strength(100f).noDrops()));
+            () -> new LiquidBlock(() -> ModFluids.MOLTEN_IRON_FLUID.get(), BlockBehaviour.Properties.of(Material.LAVA)
+                    .strength(100f).noDrops()));
 
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);

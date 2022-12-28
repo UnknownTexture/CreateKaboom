@@ -9,5 +9,10 @@
   "item.createkaboom.alcohol_bucket": "Bucket of Alcohol",
   "item.createkaboom.gunpowder_bucket": "Bucket of Gunpowder",
   "item.createkaboom.molten_glass_bucket": "Bucket of Molten Glass",
-  "item.createkaboom.molten_iron_bucket": "Bucket of Molten Iron"
+  "item.createkaboom.molten_iron_bucket": "Bucket of Molten Iron",
+
+  "fluid.createkaboom.alcohol_fluid": "Alcohol",
+  "fluid.createkaboom.gunpowder_sand_fluid": "Gunpowder Sand",
+  "fluid.createkaboom.molten_glass_fluid": "Molten Glass",
+  "fluid.createkaboom.molten_iron_fluid": "Molten Iron"
 }

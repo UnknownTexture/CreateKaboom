@@ -1,13 +1,9 @@
 {
   "replace": false,
   "values": [
-    "createkaboom.alcohol_flowing",
-    "createkaboom.alcohol_fluid",
-    "createkaboom.gunpowder_sand_fluid",
-    "createkaboom.gunpowder_sand_flowing",
-    "createkaboom.molten_glass_fluid",
-    "createkaboom.molten_glass_flowing",
-    "createkaboom.molten_iron_fluid",
-    "createkaboom.molten_iron_flowing"
+    "createkaboom:alcohol_flowing",
+    "createkaboom:alcohol_fluid",
+    "createkaboom:gunpowder_sand_fluid",
+    "createkaboom:gunpowder_sand_flowing"
   ]
 }

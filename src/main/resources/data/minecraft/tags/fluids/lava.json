@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "createkaboom:molten_glass_fluid",
+    "createkaboom:molten_glass_flowing",
+    "createkaboom:molten_iron_fluid",
+    "createkaboom:molten_iron_flowing"
+  ]
+}

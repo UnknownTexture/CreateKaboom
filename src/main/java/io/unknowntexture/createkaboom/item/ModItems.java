@@ -31,7 +31,6 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_KABOOM_TAB)));
 
 
-
     // Buckets
 
     public static final RegistryObject<Item> ALCOHOL_BUCKET = ITEMS.register("alcohol_bucket",
@@ -49,5 +48,6 @@ public class ModItems {
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
 
 }

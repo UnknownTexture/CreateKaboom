@@ -1,11 +1,15 @@
 package io.unknowntexture.createkaboom.block;
 
 import io.unknowntexture.createkaboom.CreateKaboom;
+import io.unknowntexture.createkaboom.block.custom.SandCastingBlock;
+import io.unknowntexture.createkaboom.item.ModCreativeModeTab;
 import io.unknowntexture.createkaboom.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -31,4 +35,9 @@ public class ModBlocks {
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
+
+
+    public static final RegistryObject<Block> SAND_CASTING_BLOCK = registerBlock("sand_casting_block",
+            () -> new SandCastingBlock(BlockBehaviour.Properties.copy(Blocks.SAND).noOcclusion()),
+            ModCreativeModeTab.CREATE_KABOOM_TAB);
 }
