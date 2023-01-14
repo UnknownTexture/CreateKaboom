@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:gunpowder",
+      "amount" : 6
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createkaboom:gunpowder_sand",
+      "amount": 750
+    }
+  ]
+}
