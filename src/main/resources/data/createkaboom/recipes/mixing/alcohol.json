@@ -2,19 +2,21 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "tag": "forge:food"
+      "tag": "forge:crops",
+      "amount": 6
     },
     {
       "fluid": "minecraft:water",
       "nbt": {},
-      "amount": 500
+      "amount": 1000
     }
   ],
   "results": [
     {
-      "fluid": "createkaboom:alcohol",
+      "fluid": "createkaboom:alcohol_fluid",
       "amount": 750
     }
   ],
+  "processingTime": 3,
   "heatRequirement": "heated"
 }

@@ -90,7 +90,7 @@ public class ModFluids {
     public static final ForgeFlowingFluid.Properties MOLTEN_IRON_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> MOLTEN_IRON_FLUID.get(), () -> MOLTEN_IRON_FLOWING.get(), FluidAttributes.builder(MOLTEN_IRON_FLUID_STILL, MOLTEN_IRON_FLUID_FLOWING)
             .density(20).luminosity(3).viscosity(7).sound(SoundEvents.HONEY_DRINK)).slopeFindDistance(4).levelDecreasePerBlock(6) .block(() -> ModFluids.MOLTEN_IRON_BLOCK.get()).bucket(() -> ModItems.MOLTEN_IRON_BUCKET.get());
-    public static final RegistryObject<LiquidBlock> MOLTEN_IRON_BLOCK = ModBlocks.BLOCKS.register("molten_iron",
+    public static final RegistryObject<LiquidBlock> MOLTEN_IRON_BLOCK = ModBlocks.BLOCKS.register("molten_iron.json",
             () -> new LiquidBlock(() -> ModFluids.MOLTEN_IRON_FLUID.get(), BlockBehaviour.Properties.of(Material.LAVA)
                     .strength(100f).noDrops()));
 

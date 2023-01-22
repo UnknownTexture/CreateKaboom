@@ -1,6 +1,7 @@
 package io.unknowntexture.createkaboom.block;
 
 import io.unknowntexture.createkaboom.CreateKaboom;
+import io.unknowntexture.createkaboom.block.custom.GunpowderBarrel;
 import io.unknowntexture.createkaboom.block.custom.SandCastingBlock;
 import io.unknowntexture.createkaboom.item.ModCreativeModeTab;
 import io.unknowntexture.createkaboom.item.ModItems;
@@ -39,5 +40,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SAND_CASTING_BLOCK = registerBlock("sand_casting_block",
             () -> new SandCastingBlock(BlockBehaviour.Properties.copy(Blocks.SAND).noOcclusion()),
+            ModCreativeModeTab.CREATE_KABOOM_TAB);
+
+    public static final RegistryObject<Block> GUNPOWDER_BARREL = registerBlock("gunpowder_barrel",
+            () -> new GunpowderBarrel(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)),
             ModCreativeModeTab.CREATE_KABOOM_TAB);
 }

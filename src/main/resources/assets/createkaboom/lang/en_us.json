@@ -16,5 +16,7 @@
   "fluid.createkaboom.alcohol_fluid": "Alcohol",
   "fluid.createkaboom.gunpowder_sand_fluid": "Gunpowder Sand",
   "fluid.createkaboom.molten_glass_fluid": "Molten Glass",
-  "fluid.createkaboom.molten_iron_fluid": "Molten Iron"
+  "fluid.createkaboom.molten_iron_fluid": "Molten Iron",
+
+  "block.createkaboom.sand_casting_block": "Sand Cast"
 }

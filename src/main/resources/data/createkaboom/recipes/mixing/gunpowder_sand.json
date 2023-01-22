@@ -8,8 +8,10 @@
   ],
   "results": [
     {
-      "fluid": "createkaboom:gunpowder_sand",
+      "fluid": "createkaboom:gunpowder_sand_fluid",
       "amount": 750
     }
-  ]
+  ],
+  "processingTime": 3,
+  "heatRequirement": "none"
 }
