@@ -2,19 +2,18 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "tag": "forge:crops",
-      "amount": 6
+      "tag": "forge:crops"
     },
     {
       "fluid": "minecraft:water",
       "nbt": {},
-      "amount": 1000
+      "amount": 200
     }
   ],
   "results": [
     {
       "fluid": "createkaboom:alcohol_fluid",
-      "amount": 750
+      "amount": 125
     }
   ],
   "processingTime": 3,

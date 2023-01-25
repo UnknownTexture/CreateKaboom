@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createkaboom:iron_shell"
+    },
+    {
+      "fluid": "createkaboom:gunpowder_sand_fluid",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "createkaboom:incomplete_iron_bomb"
+    }
+  ]
+}

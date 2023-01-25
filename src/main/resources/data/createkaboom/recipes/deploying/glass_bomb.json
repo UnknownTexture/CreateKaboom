@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createkaboom:incomplete_glass_bomb"
+    },
+    {
+      "item": "minecraft:string"
+    }
+  ],
+  "results": [
+    {
+      "item": "createkaboom:glass_bomb"
+    }
+  ]
+}

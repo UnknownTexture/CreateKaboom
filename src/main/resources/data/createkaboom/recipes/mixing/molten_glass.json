@@ -2,14 +2,13 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "tag": "forge:glass",
-      "amount" : 8
+      "tag": "forge:glass"
     }
   ],
   "results": [
     {
       "fluid": "createkaboom:molten_glass_fluid",
-      "amount": 750
+      "amount": 125
     }
   ],
   "processingTime": 15,

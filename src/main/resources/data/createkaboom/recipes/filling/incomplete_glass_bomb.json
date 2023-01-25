@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createkaboom:glass_shell"
+    },
+    {
+      "fluid": "createkaboom:alcohol_fluid",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "createkaboom:incomplete_glass_bomb"
+    }
+  ]
+}

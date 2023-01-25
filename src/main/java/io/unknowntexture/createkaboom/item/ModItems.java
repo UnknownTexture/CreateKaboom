@@ -1,6 +1,5 @@
 package io.unknowntexture.createkaboom.item;
 
-import com.ibm.icu.text.AlphabeticIndex;
 import io.unknowntexture.createkaboom.CreateKaboom;
 import io.unknowntexture.createkaboom.fluid.ModFluids;
 import io.unknowntexture.createkaboom.item.custom.ThrowableBombItem;

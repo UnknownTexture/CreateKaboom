@@ -2,14 +2,13 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "tag": "forge:ingots/iron",
-      "amount" : 8
+      "tag": "forge:ingots/iron"
     }
   ],
   "results": [
     {
       "fluid": "createkaboom:molten_iron_fluid",
-      "amount": 750
+      "amount": 125
     }
   ],
   "processingTime": 15,

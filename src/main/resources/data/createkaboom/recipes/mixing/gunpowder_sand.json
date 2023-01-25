@@ -2,14 +2,13 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "minecraft:gunpowder",
-      "amount" : 6
+      "item": "minecraft:gunpowder"
     }
   ],
   "results": [
     {
       "fluid": "createkaboom:gunpowder_sand_fluid",
-      "amount": 750
+      "amount": 125
     }
   ],
   "processingTime": 3,
