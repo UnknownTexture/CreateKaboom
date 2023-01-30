@@ -37,9 +37,10 @@ public class ModBlocks {
         BLOCKS.register(eventBus);
     }
 
-
+//PLEASE space out the block properties (if you can)
     public static final RegistryObject<Block> SAND_CASTING_BLOCK = registerBlock("sand_casting_block",
-            () -> new SandCastingBlock(BlockBehaviour.Properties.copy(Blocks.SAND).noOcclusion()),
+            () -> new SandCastingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)
+            .noOcclusion()),
             ModCreativeModeTab.CREATE_KABOOM_TAB);
 
     public static final RegistryObject<Block> GUNPOWDER_BARREL = registerBlock("gunpowder_barrel",
