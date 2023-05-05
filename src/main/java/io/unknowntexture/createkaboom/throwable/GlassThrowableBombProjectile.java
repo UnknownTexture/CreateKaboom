@@ -1,41 +1,23 @@
 package io.unknowntexture.createkaboom.throwable;
 
-import io.unknowntexture.createkaboom.item.ModItems;
-import net.minecraft.client.particle.Particle;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.item.PrimedTnt;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.projectile.ProjectileUtil;
-import net.minecraft.world.entity.projectile.Snowball;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.TntBlock;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.TheEndGatewayBlockEntity;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.HitResult;
-import net.minecraft.world.phys.Vec3;
 
-import javax.annotation.Nullable;
-
-public class ThrowableBombProjectile extends ThrowableItemProjectile {
+public class GlassThrowableBombProjectile extends ThrowableItemProjectile {
 
 
-    public ThrowableBombProjectile(EntityType<? extends ThrowableItemProjectile> p_37442_, Level p_37443_) {
+    public GlassThrowableBombProjectile(EntityType<? extends ThrowableItemProjectile> p_37442_, Level p_37443_) {
         super(p_37442_, p_37443_);
     }
 
@@ -46,7 +28,7 @@ public class ThrowableBombProjectile extends ThrowableItemProjectile {
     }
 
 
-    public ThrowableBombProjectile(Level level, LivingEntity livingEntity) {
+    public GlassThrowableBombProjectile(Level level, LivingEntity livingEntity) {
         super(EntityType.SNOWBALL, livingEntity, level);
     }
 
@@ -68,17 +50,17 @@ public class ThrowableBombProjectile extends ThrowableItemProjectile {
 
     @Override
     protected void onHitEntity(EntityHitResult hitResult) {
-        throwableBombExplode();
+        glassThrowableBombExplode();
     }
 
     @Override
     protected void onHitBlock(BlockHitResult p_37258_) {
         super.onHitBlock(p_37258_);
-        throwableBombExplode();
-
+        glassThrowableBombExplode();
+        this.setSecondsOnFire(20);
     }
 
-    protected void throwableBombExplode() {
+    protected void glassThrowableBombExplode() {
         float f = 1.5F;
         //IDK is this radius or damage
         this.level.explode(this, this.getX(), this.getY(0.0625D), this.getZ(), f, Explosion.BlockInteraction.BREAK);
@@ -88,5 +70,4 @@ public class ThrowableBombProjectile extends ThrowableItemProjectile {
     protected float getGravity() {
         return 0.03F;
     }
-
 }

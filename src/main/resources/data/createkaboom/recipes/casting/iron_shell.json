@@ -1,0 +1,16 @@
+{
+  "type": "createkaboom:casting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createkaboom:molten_iron_fluid",
+      "amount": 250
+    }
+  ],
+  "processingTime": 1620,
+  "results": [
+    {
+      "item": "createkaboom:iron_shell"
+    }
+  ]
+}

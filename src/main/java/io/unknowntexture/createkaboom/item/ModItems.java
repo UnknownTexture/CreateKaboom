@@ -2,6 +2,7 @@ package io.unknowntexture.createkaboom.item;
 
 import io.unknowntexture.createkaboom.CreateKaboom;
 import io.unknowntexture.createkaboom.fluid.ModFluids;
+import io.unknowntexture.createkaboom.item.custom.GlassThrowableBombItem;
 import io.unknowntexture.createkaboom.item.custom.ThrowableBombItem;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
@@ -19,7 +20,7 @@ public class ModItems {
             () -> new ThrowableBombItem(new Item.Properties().tab(ModCreativeModeTab.CREATE_KABOOM_TAB).stacksTo(8)));
 
     public static final RegistryObject<Item> GLASS_BOMB = ITEMS.register("glass_bomb",
-            () -> new ThrowableBombItem(new Item.Properties().tab(ModCreativeModeTab.CREATE_KABOOM_TAB).stacksTo(8)));
+            () -> new GlassThrowableBombItem(new Item.Properties().tab(ModCreativeModeTab.CREATE_KABOOM_TAB).stacksTo(8)));
 
     // Throwable Bomb Crafting Stages
 
