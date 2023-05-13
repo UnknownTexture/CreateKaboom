@@ -12,12 +12,12 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 
 public class SandCastingBlock extends Block {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
-    public SandCastingBlock(Properties properties) {
-        super(properties);
+    public SandCastingBlock(Properties properties) {super(properties);
     }
 
     private static final VoxelShape SHAPE =  Block.box(0, 0, 0, 16, 16, 16);

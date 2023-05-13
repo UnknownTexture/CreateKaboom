@@ -1,6 +1,6 @@
 {
   "type": "createkaboom:casting",
-  "heatRequirement": "heated",
+  "heatRequirement": "none",
   "ingredients": [
     {
       "fluid": "createkaboom:molten_iron_fluid",
