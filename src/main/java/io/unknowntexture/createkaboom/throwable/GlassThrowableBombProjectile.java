@@ -63,7 +63,7 @@ public class GlassThrowableBombProjectile extends ThrowableItemProjectile {
     protected void glassThrowableBombExplode() {
         float f = 1.5F;
         //IDK is this radius or damage
-        this.level.explode(this, this.getX(), this.getY(0.0625D), this.getZ(), 1.5, Explosion.BlockInteraction.BREAK);
+        this.level.explode(this, this.getX(), this.getY(0.0625D), this.getZ(), 2, Explosion.BlockInteraction.BREAK);
         this.kill();
     }
     @Override
